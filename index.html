@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07010f" />
+    <meta
+      name="description"
+      content="Dopamine Land — a sensory tunnel of light you can touch."
+    />
+    <title>Dopamine Land</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g' cx='40%25' cy='35%25' r='70%25'%3E%3Cstop offset='0' stop-color='%23fff6c8'/%3E%3Cstop offset='.35' stop-color='%23ff4f9a'/%3E%3Cstop offset='1' stop-color='%23081428'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%23060110'/%3E%3Ccircle cx='32' cy='32' r='16' fill='url(%23g)'/%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <div id="scene" aria-hidden="true"></div>
+
+    <div class="veil" id="veil"></div>
+    <div class="progress" id="progress" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+
+    <header>
+      <a class="mark" href="#arrive">Dopamine Land</a>
+      <div class="controls">
+        <div class="moods" role="group" aria-label="Weather">
+          <button type="button" data-mood="drift" aria-pressed="true">Drift</button>
+          <button type="button" data-mood="surge" aria-pressed="false">Surge</button>
+          <button type="button" data-mood="candy" aria-pressed="false">Candy</button>
+        </div>
+        <button type="button" id="sound" aria-pressed="false" aria-label="Turn sound on">
+          <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M4 10h3.2L11 6.4v11.2L7.2 14H4v-4zm11.2 2 2.4-2.4.9.9L16.1 12l2.4 2.4-.9.9-2.4-2.4-2.4 2.4-.9-.9L14.3 12l-2.4-2.4.9-.9 2.4 2.4z"
+              fill="currentColor"
+            />
+          </svg>
+          <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M4 10h3.2L11 6.4v11.2L7.2 14H4v-4zm9.2-2.2a5.2 5.2 0 0 1 0 8.4l-.8-.9a4 4 0 0 0 0-6.6l.8-.9zm2.3-1.6a7.6 7.6 0 0 1 0 11.6l-.8-.8a6.4 6.4 0 0 0 0-10l.8-.8z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="arrive">
+        <div class="copy center">
+          <p class="eyebrow">A sensory playground</p>
+          <h1>Dopamine<br /><span>Land</span></h1>
+          <p class="lede">A tunnel of light you can touch. Scroll in. Click the air.</p>
+        </div>
+      </section>
+
+      <section id="notice">
+        <div class="copy">
+          <p class="eyebrow">01</p>
+          <h2>It leans toward you.</h2>
+          <p>Move your hand. The field has a small gravity, and you are the heavy thing.</p>
+        </div>
+      </section>
+
+      <section id="mark">
+        <div class="copy end">
+          <p class="eyebrow">02</p>
+          <h2>Leave a bright mark.</h2>
+          <p>Every click opens a ring of color, then the tunnel stitches itself shut.</p>
+        </div>
+      </section>
+
+      <section id="weather">
+        <div class="copy">
+          <p class="eyebrow">03</p>
+          <h2>Pick a weather.</h2>
+          <p>Drift is dusk. Surge is a fuse. Candy is the room with the lights too high, on purpose.</p>
+        </div>
+      </section>
+    </main>
+
+    <p class="hint" id="hint">Scroll to enter</p>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
